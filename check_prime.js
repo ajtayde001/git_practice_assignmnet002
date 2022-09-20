@@ -1,18 +1,18 @@
-function Prime(num){
+function Prime_check(num){
 
-let count=0; 
+let factor=0; 
 for(let i=1 ;i<=num; i++){
-  if(num%i=0){
-    count++;
+  if(num%i==0){
+    factor++;
   }
 }
-if(count=2){
+if(factor==2){
   return true
 }
   return false
 }
-let ans= Prime(20);
-if(ans==true){
+let answer= Prime_check(20);
+if(answer==true){
   console.log("Prime")
 }else{
   console.log("Not Prime")
